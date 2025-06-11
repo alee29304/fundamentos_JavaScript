@@ -47,3 +47,97 @@ function parImpar() {
         alert("El numero es impar...");
     }
 }
+
+/* Temperatura ambiental
+Solicita la temperatura actual. Si es mayor o igual a 30, muestra “Hace calor”,
+ de lo contrario muestra “Clima agradable”.
+ */
+function temperaturaAmbiente() {
+    let temp = parseInt(prompt("Ingresa la temperatura"));
+
+    if (temp <= 30) {
+        alert("Clima Agradable");
+    } else if (temp >= 30) {
+        alert("Hace calor");
+    } else {
+        alert("Ingrese una temperatura");
+    }
+}
+
+/* Comparar dos números
+Solicita dos números al usuario. Compara ambos y muestra cuál es mayor o si son iguales.
+*/
+function compararNum() {
+    let num1 = parseInt(prompt("Ingresar primer numero"));
+    let num2 = parseInt(prompt("Ingresar segundo numero"));
+
+    if (num1 < num2) {
+        alert(" el numero " + num1 + " es menor que " + num2)
+    } else if (num1 == num2) {
+        alert(" el numero " + num1 + " es igual que " + num2)
+    } else {
+        alert(" el numero " + num1 + " es mayor que " + num2)
+    }
+}
+
+/* Calificación escolar
+Pide una nota entre 1 y 7. Si es 4 o más, muestra “Aprobado”, si es menor, muestra “Reprobado”.
+*/
+function calificacionEscolar() {
+    let cal = parseInt(prompt("Ingresa tu nota:"));
+
+    if (cal < 4) {
+        alert("Reprobado");
+    } else if (cal >= 4 && cal <= 7) {
+        alert("Aprobado");
+    } else {
+        alert("Ingrese un valor valido");
+    }
+}
+
+/* Nombre de usuario válido
+Pide un nombre de usuario. Si el valor ingresado es "admin",
+muestra “Bienvenido, administrador”. Si no, muestra “Usuario no reconocido”.
+*/
+function userName() {
+    let user = prompt("Ingrese su usuario:");
+
+    if (user == "admin") {
+        alert("Bienvenido, administrador.");
+    } else if (user !== "admin") {
+        alert("Usuario no reconocido.");
+    } else {
+        alert("Ingrese un usuario");
+    }
+}
+
+/* Verificar si una palabra empieza con "A"
+ Pide una palabra al usuario. Verifica si empieza con la letra “A” mayúscula y muestra un mensaje acorde.
+*/
+function verificarPalabra() {
+    let palabra = prompt("Ingresa una palabra:");
+
+    if (palabra[0] == "A") {
+        alert("La palabra si empieza con A");
+    } else if (palabra !== "A") {
+        alert("La palabra no empieza por A");
+    } else {
+        alert("Ingrese una palabra");
+    }
+}
+
+/* Precio con descuento
+ Solicita el precio de un producto. Si el precio es mayor a 10000,
+  muestra que aplica descuento. Si no, indica precio normal.
+*/
+function precioDesc() {
+    let precio = prompt("Ingrese un precio:");
+
+    if (precio >= 10000) {
+        alert("Aplica descuento");
+    } else if (precio < 10000) {
+        alert("No aplica descuento");
+    } else {
+        alert("Ingrese un precio");
+    }
+}
