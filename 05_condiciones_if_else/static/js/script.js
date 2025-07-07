@@ -141,3 +141,20 @@ function precioDesc() {
         alert("Ingrese un precio");
     }
 }
+
+/*Verificar si una persona puede conducir
+ Solicita la edad del usuario y si tiene licencia (por ejemplo, respondiendo "sí" o "no"). Si tiene
+  18 o más y respondió que tiene licencia, muestra “Puede conducir”. Si no, muestra “No puede conducir”.
+*/
+function personaConducir() {
+    let edad = prompt("Ingresar edad:");
+    let licencia = prompt('¿Tienes licencia de conducir?');
+
+    if (edad >= 18 && licencia == "si") {
+        alert("Puede conducir");
+    } else if (edad < 18 && edad > 0 && licencia == "no") {
+        alert("No puede conducir");
+    } else {
+        alert("Ingresar datos validos");
+    }
+}
