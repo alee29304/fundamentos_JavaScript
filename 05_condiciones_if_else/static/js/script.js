@@ -158,3 +158,21 @@ function personaConducir() {
         alert("Ingresar datos validos");
     }
 }
+
+
+/* 11. - Comparar la longitud de dos palabras
+Solicita dos palabras con prompt().Compara cuántas letras tiene cada
+ una y muestra cuál es más larga o si tienen el mismo largo. */
+
+function palabraLarga() {
+    let pal1 = prompt("Ingrese primera palabra")
+    let pal2 = prompt("Ingrese segunda palabra")
+
+    if (pal1 == "" && pal2 == "") {
+
+    } else if (pal1.length < pal2.length) {
+        alert(`La palabra más larga es ${pal2} con $pal.length} caracteres`)
+    } else if (pal1.length == pal2.length) {
+        alert("")
+    }
+}
