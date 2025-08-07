@@ -200,7 +200,7 @@ function validarCorreo() {
 Solicita un número.Muestra si es positivo, negativo o cero. */
 
 function verificarNumero() {
-    let num = parseInt(prompt("Ingrese un número"));
+    let num = parseInt(prompt("Ingrese un número:"));
 
     if (num > 0) {
         alert("El número es positivo");
@@ -210,5 +210,37 @@ function verificarNumero() {
         alert("El número es cero");
     } else {
         alert("Ingrese un número");
+    }
+}
+
+/* 14.- Saludo personalizado según hora
+Pide la hora actual (en formato 24 horas). Si es antes de las 12, muestra
+ "Buenos días", si es entre 12 y 18, "Buenas tardes", y si es mayor a 18, "Buenas noches".*/
+
+function mostrarHora() {
+    let hora = parseInt(prompt("Ingrese una hora:"));
+
+    if (hora < 12) {
+        alert("Buenos días");
+    } else if (hora >= 12 && hora <= 18) {
+        alert("Buenas tardes");
+    } else {
+        alert("Buenas noches")
+    }
+}
+
+/* 15.- Verificar si una palabra contiene la letra "e"
+Solicita una palabra. Verifica si contiene la letra "e" (minúscula). Si la tiene, muestra
+ "Contiene la letra 'e'", si no, muestra "No contiene la letra 'e'". */
+
+function mostrarLetra() {
+    let palabra = prompt("Ingrese una palabra:");
+
+    if (palabra == "e") {
+        alert("Contiene la letra e");
+    } else if (palabra !== "e") {
+        alert("No contiene la letra e");
+    } else {
+        alert("Ingresar un valor válido")
     }
 }
