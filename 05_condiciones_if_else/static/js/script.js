@@ -228,7 +228,7 @@ function mostrarHora() {
         alert("Buenas noches")
     }
 }
-
+/**/
 /* 15.- Verificar si una palabra contiene la letra "e"
 Solicita una palabra. Verifica si contiene la letra "e" (minúscula). Si la tiene, muestra
  "Contiene la letra 'e'", si no, muestra "No contiene la letra 'e'". */
