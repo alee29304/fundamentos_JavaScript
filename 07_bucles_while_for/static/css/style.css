@@ -1,0 +1,50 @@
+/* Resetear estilos css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Open Sans", sans-serif;
+}
+
+header h1 {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ejemplos {
+    margin-top: 22px;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.ejercicios {
+    margin-top: 35px;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.while {
+    margin-bottom: 15px;
+}
+
+.ejer1 {
+    margin-bottom: 15px;
+}
+
+.ejer2 {
+    margin-bottom: 15px;
+}
+
+.ejer3 {
+    margin-bottom: 15px;
+}
+
+button {
+    margin-top: 3px;
+    padding: 4px;
+}
